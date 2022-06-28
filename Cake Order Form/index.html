@@ -1,0 +1,204 @@
+<html lang="tr">
+<head>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"/>
+    <link href="css.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+          integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    ,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+            integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+<div class="image-container set-full-height"
+     style="background-image: url('https://i.pinimg.com/originals/e3/fe/7c/e3fe7cfb1606543ec01509fc935f680b.jpg')">
+
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <!-- Wizard container -->
+                <div class="wizard-container">
+                    <div class="card wizard-card" data-color="red" id="wizard">
+                        <form action="" method="">
+                            <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+
+                            <div class="wizard-header">
+                                <h3 class="wizard-title">
+                                    Cake Order Form
+                                </h3>
+                            </div>
+                            <div class="wizard-navigation">
+                                <ul>
+                                    <li><a href="#details" data-toggle="tab">Account</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div class="tab-pane" id="details">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> Accounts</h4>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="material-icons">email</i>
+                                                    </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">E-Mail Adress</label>
+                                                    <input name="email" required type="email" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="material-icons">perm_identity</i>
+                                                    </span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Name Surname</label>
+                                                    <input name="name" required type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Country</label>
+                                                <select required class="form-control">
+                                                    <option disabled="" selected=""></option>
+                                                    <option value="Türkiye"> Türkiye</option>
+                                                    <option value="Afghanistan"> Afghanistan</option>
+                                                    <option value="Albania"> Albania</option>
+                                                    <option value="Algeria"> Algeria</option>
+                                                    <option value="American Samoa"> American Samoa</option>
+                                                    <option value="Andorra"> Andorra</option>
+                                                    <option value="Angola"> Angola</option>
+                                                    <option value="Anguilla"> Anguilla</option>
+                                                    <option value="Antarctica"> Antarctica</option>
+                                                    <option value="...">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">City</label>
+                                                <select required class="form-control">
+                                                    <option disabled="" selected=""></option>
+                                                    <option value="Gaziantep"> Gaziantep</option>
+
+                                                    <option value="...">...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                                                     title="Pasta 1">
+                                                    <input type="radio" required name="siparis" value="1">
+                                                    <div class="icon">
+                                                        <img style="width: 108px;    height: 109px;    border-radius: 100%;"
+                                                             src="https://s3-us-west-2.amazonaws.com/staticresources123/form-templates/cake1.jpg"
+                                                             data-choice-is-image="1">
+                                                    </div>
+                                                    <h6>Cake 1</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                                                     title="Pasta 2">
+                                                    <input type="radio" required name="siparis" value="2">
+                                                    <div class="icon">
+                                                        <img style="width: 108px;    height: 109px;    border-radius: 100%;"
+                                                             src="https://s3-us-west-2.amazonaws.com/staticresources123/form-templates/cake2.jpg"
+                                                             data-choice-is-image="1">
+                                                    </div>
+                                                    <h6>Cake 2</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                                                     title="Pasta 3">
+                                                    <input type="radio" required name="siparis" value="3">
+                                                    <div class="icon">
+                                                        <img style="width: 108px;    height: 109px;    border-radius: 100%;"
+                                                             src="https://s3-us-west-2.amazonaws.com/staticresources123/form-templates/cake3.jpg"
+                                                             data-choice-is-image="1">
+                                                    </div>
+                                                    <h6>Cake 3</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                                                     title="Pasta 4">
+                                                    <input type="radio" required name="siparis" value="4">
+                                                    <div class="icon">
+                                                        <img style="width: 108px;    height: 109px;    border-radius: 100%;"
+                                                             src="https://s3-us-west-2.amazonaws.com/staticresources123/form-templates/cake4.jpg"
+                                                             data-choice-is-image="1">
+                                                    </div>
+                                                    <h6>Cake 4</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="input-group">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">Piece</label>
+                                                        <input name="adet" required type="number" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="row">
+                                        <h4 class="info-text"> Address information</h4>
+                                        <div class="col-sm-6 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>Address information</label>
+                                                <textarea required class="form-control" placeholder="" rows="6"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Adress</label>
+                                                <p class="description">"After entering the information, you can complete your order by clicking the Finish button."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-footer">
+                                <div class="pull-right">
+
+                                    <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish'
+                                           value='Purchase'/>
+                                </div>
+                                <div class="pull-left">
+
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- wizard container -->
+            </div>
+        </div> <!-- row -->
+    </div> <!--  big container -->
+
+    <div class="footer">
+
+    </div>
+</div>
+</body>
+</html>
